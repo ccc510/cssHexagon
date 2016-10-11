@@ -105,30 +105,10 @@ body{
 }
 
 
-.six-rect2{
-	width:100px;
-	height:0;
-	border-bottom: 85px solid #011931;
-	border-left: 50px solid transparent;
-	border-right:50px solid transparent;
-	position: relative;
-}
-
-.six-rect2:after{
-	content: '';
-	position: absolute;
-	top:85px;
-	left:-50;
-	width:100px;
-	height:0;
-	border-top:85px solid #011931;
-	border-left:50px solid transparent;
-	border-right:50px solid transparent;
-}
 
 
 /*八角形のボタン*/
-.eight-rect{
+.Octagon{
 	margin:100 0;
 	width:170px;
 	height:70px;
@@ -143,7 +123,7 @@ body{
     -webkit-transition: all 0.8s ease;
 }
 
-.eight-rect:before{
+.Octagon:before{
 	content:'';
 	position: absolute;
 	top:-50px;
@@ -155,7 +135,7 @@ body{
 	border-right:50px solid transparent; 
 }
 
-.eight-rect:after{
+.Octagon:after{
 	content:'';
 	position:absolute;
 	top:70px;
@@ -167,7 +147,7 @@ body{
 	border-right:50px solid transparent;
 }
 
-.eight-rect:hover{
+.Octagon:hover{
 	transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
 }
