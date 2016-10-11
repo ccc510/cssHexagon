@@ -1,0 +1,230 @@
+/*
+body{
+	background: #011931;
+}
+*/
+.container{
+	width:60%;
+	max-width: 640px;
+	margin: 0 auto;
+}
+
+
+
+
+
+/*六角形のボタン*/
+
+.Hexagon{
+	margin:100 0;
+	display: block;
+	width: 170px;
+	height:100px;
+	line-height: 100px;
+	background: #011931;
+	position: relative;
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+	/*速度の設定*/
+	transition: all 0.8s ease;
+    -webkit-transition: all 0.8s ease;
+}
+
+.Hexagon:hover{
+	transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
+
+.Hexagon:before{
+	content:''; /*htmlに記入できないのでcssで記入するようにする*/
+	position: absolute;
+	top: -50px;
+	left:0;
+	width:0;
+	height: 0;
+	border-left: 85px solid transparent;
+	border-right: 85px solid transparent;
+	border-bottom: 50px solid #011931;
+}
+.Hexagon:after{
+	content: ''; /*htmlに記入できないのでcssで記入するようにする*/
+	position: absolute;
+	top:100px;
+	left:0;
+	width:0;
+	height: 0;
+	border-left: 85px solid transparent;
+	border-right: 85px solid transparent;
+	border-top: 50px solid #011931;
+}
+
+.six-rectSam{
+	margin:100 0;
+	display: block;
+	width: 170px;
+	height:100px;
+	line-height: 100px;
+	background: #011931;
+	position: relative;
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+	/*速度の設定*/
+	transition: all 0.8s ease;
+    -webkit-transition: all 0.8s ease;
+}
+
+
+
+
+.six-rectSam:before{
+
+	content:''; /*htmlに記入できないのでcssで記入するようにする*/
+	position: absolute;
+	top: -70px;
+	left:0;
+	width:0;
+	height: 0;
+	border-left: 85px solid transparent;
+	border-right: 85px solid transparent;
+	border-bottom: 50px solid #011931;
+}
+.six-rectSam:after{
+	margin-top:30px;
+	content: ''; /*htmlに記入できないのでcssで記入するようにする*/
+	position: absolute;
+	top:120px;
+	left:0;
+	width:0;
+	height: 0;
+	border-left: 85px solid transparent;
+	border-right: 85px solid transparent;
+	border-top: 50px solid #011931;
+}
+
+
+.six-rect2{
+	width:100px;
+	height:0;
+	border-bottom: 85px solid #011931;
+	border-left: 50px solid transparent;
+	border-right:50px solid transparent;
+	position: relative;
+}
+
+.six-rect2:after{
+	content: '';
+	position: absolute;
+	top:85px;
+	left:-50;
+	width:100px;
+	height:0;
+	border-top:85px solid #011931;
+	border-left:50px solid transparent;
+	border-right:50px solid transparent;
+}
+
+
+/*八角形のボタン*/
+.eight-rect{
+	margin:100 0;
+	width:170px;
+	height:70px;
+	line-height: 70px;
+	background: #011931;
+	position: relative;
+	display: block;
+	text-decoration: none;
+	color: #FFF;
+	text-align: center;
+	transition: all 0.8s ease;
+    -webkit-transition: all 0.8s ease;
+}
+
+.eight-rect:before{
+	content:'';
+	position: absolute;
+	top:-50px;
+	left:0px;
+	width:70px;
+	height:0px;
+	border-bottom: 50px solid #011931;
+	border-left: 50px solid transparent;
+	border-right:50px solid transparent; 
+}
+
+.eight-rect:after{
+	content:'';
+	position:absolute;
+	top:70px;
+	left:0px;
+	width:70px;
+	height:0px;
+	border-top:50px solid #011931;
+	border-left:50px solid transparent;
+	border-right:50px solid transparent;
+}
+
+.eight-rect:hover{
+	transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
+
+/*コメントの形のボタン*/
+
+.commentBtn{
+	margin:100 0;
+	width:200px;
+	height: 50px;
+	line-height: 50px;
+	border-radius: 5px;
+	text-align: center;
+	color: #fff;
+	text-align: none;
+	background: #011931;
+	display: block;
+	position: relative;
+	text-decoration: none;
+
+	/*transition: all 0.8s ease;
+    -webkit-transition: all 0.8s ease;*/
+}
+
+
+
+.commentBtn:after{
+	content: "";
+	position: absolute;
+	top:50px;
+	right:50px;
+	height:0;
+	border-top: 20px solid #011931;
+	border-left: 20px solid transparent;
+}
+
+.commentBtn:hover{
+	animation: shake 0.2s linear infinite;
+    -webkit-animation: shake 0.2s linear infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(3px, 2px) rotate(0deg); }
+    10% { transform: translate(-2px, -3px) rotate(-1deg); }
+    20% { transform: translate(-4px, 0px) rotate(1deg); }
+    30% { transform: translate(0px, 3px) rotate(0deg); }
+    40% { transform: translate(2px, -2px) rotate(1deg); }
+    50% { transform: translate(-2px, 3px) rotate(-1deg); }
+    60% { transform: translate(-4px, 2px) rotate(0deg); }
+    70% { transform: translate(3px, 2px) rotate(-1deg); }
+    80% { transform: translate(-2px, -2px) rotate(1deg); }
+    90% { transform: translate(2px, 4px) rotate(0deg); }
+    100% { transform: translate(2px, -3px) rotate(-1deg); }
+}
+
+
+
+
+
